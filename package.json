@@ -1,29 +1,39 @@
 {
-  "name": "vue-grid",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-grids-layout",
+  "author": "blaadje",
+  "version": "0.2.0",
+  "private": false,
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js",
+    "*.ts"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "bundle": "vue-cli-service build --target lib --report-json --name vue-grids ./src/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
+  "main": "./dist/vue-grids.common.js",
   "dependencies": {
-    "vue": "^2.6.6",
+    "vue": "^2.6.8",
     "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^7.0.0"
+    "vue-property-decorator": "^7.0.0",
+    "vue-styled-components": "^1.4.4"
   },
   "devDependencies": {
-    "@types/jest": "^23.1.4",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-typescript": "^3.0.4",
-    "@vue/cli-plugin-unit-jest": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
-    "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.1.0",
+    "prettier": "^1.16.4",
     "ts-jest": "^23.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.2.1",
     "vue-template-compiler": "^2.5.21"
   }
