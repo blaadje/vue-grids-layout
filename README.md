@@ -1,8 +1,8 @@
-# vue-grid
+# vue-grids-layout
 
 ## Project setup
 ```
-yarn install
+yarn install vue-grids-layout
 ```
 
 ### Compiles and hot-reloads for development
