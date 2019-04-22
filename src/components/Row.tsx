@@ -6,7 +6,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  background: red;
   width: 100%;
   ${(props: any) =>
     forEachBreakpoint(
